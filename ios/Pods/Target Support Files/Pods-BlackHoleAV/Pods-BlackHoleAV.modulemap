@@ -1,0 +1,6 @@
+module Pods_BlackHoleAV {
+  umbrella header "Pods-BlackHoleAV-umbrella.h"
+
+  export *
+  module * { export * }
+}
