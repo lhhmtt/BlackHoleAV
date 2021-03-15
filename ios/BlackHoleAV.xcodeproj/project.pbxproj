@@ -15,27 +15,11 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* BlackHoleAVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BlackHoleAVTests.m */; };
-		606165CFE17BE5AE917717D6 /* libPods-BlackHoleAV-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA507ABC5F011147A8A6FEBE /* libPods-BlackHoleAV-tvOS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8F984537EDB35D14720BCBE7 /* libPods-BlackHoleAV-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 711B5D2E75224C9140522DB7 /* libPods-BlackHoleAV-tvOSTests.a */; };
-		9DC2B2699528BBECAF26CA17 /* libPods-BlackHoleAV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4842F1E48760FB408ADFB00 /* libPods-BlackHoleAV.a */; };
-		F14E52D68FCE5694DD00209F /* libPods-BlackHoleAV-BlackHoleAVTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB2B20A7DD582B4062203F3 /* libPods-BlackHoleAV-BlackHoleAVTests.a */; };
-		CE0B04A09D154481BB3600C6 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB4DEDEFFE8454E951B608F /* AntDesign.ttf */; };
-		713F5E8316384AB3825C88A9 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7646FC3D5DA4A338DDF68DA /* Entypo.ttf */; };
-		DF46528416E747CBB91A5678 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA65734234F74DFFA9AB152D /* EvilIcons.ttf */; };
-		DE6FF765EAE04C30AF3A8DDC /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DB8B5F19F1434CB1904F6C /* Feather.ttf */; };
-		6AB0AD5A8D6E43E0A6E9149A /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73FB36DA11B54D95AD9C3C61 /* FontAwesome.ttf */; };
-		CE5284FEC69A4C29846E02C2 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97C1D856E42744CEB012AD9A /* FontAwesome5_Brands.ttf */; };
-		51B293546EF14074BFEC41AD /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF355BE78AA044FFBAC29EBA /* FontAwesome5_Regular.ttf */; };
-		634C10D600A047D5A69B675B /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DA4B60C21BE486C9913F419 /* FontAwesome5_Solid.ttf */; };
-		A01A32CD516D4DDDB42088AC /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1806158E58264652B980E0CF /* Fontisto.ttf */; };
-		5F278DDBC5E646D9A3D8128F /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F12B255BCB6741198C6391E7 /* Foundation.ttf */; };
-		2E3A1FA5030C449291A9E875 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA1A3A11B2694D989589490F /* Ionicons.ttf */; };
-		7D3591F7176847E08A20307B /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B04590B5C116439FB29D518B /* MaterialCommunityIcons.ttf */; };
-		38D6583B8B1C4AA4BD851E94 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C874E4DE5AA74668A3188494 /* MaterialIcons.ttf */; };
-		B061FF4FED4243B295A1814D /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01122B9E8A7E4064B073471A /* Octicons.ttf */; };
-		D938AC093BE449439BA20E19 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C71E28E0EA444573B6B6142C /* SimpleLineIcons.ttf */; };
-		8F85BECE772640EE8C21FCAF /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4806EAC296894F40B1B069CC /* Zocial.ttf */; };
+		86E556A9D22A47C8F0375DF9 /* libPods-BlackHoleAV-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E787A4CDB2EA999CE36006F1 /* libPods-BlackHoleAV-tvOS.a */; };
+		C20D19D3E8A7FA491683EE50 /* libPods-BlackHoleAV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FB2AC8A68182FC55B0E8D6 /* libPods-BlackHoleAV.a */; };
+		C69F10A2BC07381E41CAB808 /* libPods-BlackHoleAV-BlackHoleAVTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB57029BD0BABACA84636C96 /* libPods-BlackHoleAV-BlackHoleAVTests.a */; };
+		EF299884BB6182657137C3D7 /* libPods-BlackHoleAV-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 802F7631A26983FD8A0136FD /* libPods-BlackHoleAV-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,45 +44,29 @@
 		00E356EE1AD99517003FC87E /* BlackHoleAVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackHoleAVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* BlackHoleAVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlackHoleAVTests.m; sourceTree = "<group>"; };
-		12158BAC826EB43335803701 /* Pods-BlackHoleAV-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHoleAV-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-BlackHoleAV-tvOSTests/Pods-BlackHoleAV-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* BlackHoleAV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHoleAV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = BlackHoleAV/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = BlackHoleAV/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BlackHoleAV/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BlackHoleAV/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BlackHoleAV/main.m; sourceTree = "<group>"; };
+		14FB2AC8A68182FC55B0E8D6 /* libPods-BlackHoleAV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlackHoleAV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* BlackHoleAV-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlackHoleAV-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* BlackHoleAV-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BlackHoleAV-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E7F2B3854EA3A3CCAB32366 /* Pods-BlackHoleAV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHoleAV.release.xcconfig"; path = "Target Support Files/Pods-BlackHoleAV/Pods-BlackHoleAV.release.xcconfig"; sourceTree = "<group>"; };
-		40C03226E8B29B2303EBB895 /* Pods-BlackHoleAV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHoleAV.debug.xcconfig"; path = "Target Support Files/Pods-BlackHoleAV/Pods-BlackHoleAV.debug.xcconfig"; sourceTree = "<group>"; };
-		4275B6E201FDCCAFBE8D5917 /* Pods-BlackHoleAV-BlackHoleAVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHoleAV-BlackHoleAVTests.release.xcconfig"; path = "Target Support Files/Pods-BlackHoleAV-BlackHoleAVTests/Pods-BlackHoleAV-BlackHoleAVTests.release.xcconfig"; sourceTree = "<group>"; };
-		6630DE30A7DE4B2BE832306A /* Pods-BlackHoleAV-BlackHoleAVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHoleAV-BlackHoleAVTests.debug.xcconfig"; path = "Target Support Files/Pods-BlackHoleAV-BlackHoleAVTests/Pods-BlackHoleAV-BlackHoleAVTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6F53C5EF904FB2DC794B0996 /* Pods-BlackHoleAV-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHoleAV-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-BlackHoleAV-tvOS/Pods-BlackHoleAV-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		711B5D2E75224C9140522DB7 /* libPods-BlackHoleAV-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlackHoleAV-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65AC26FBA0C6419C85265244 /* Pods-BlackHoleAV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHoleAV.release.xcconfig"; path = "Target Support Files/Pods-BlackHoleAV/Pods-BlackHoleAV.release.xcconfig"; sourceTree = "<group>"; };
+		802F7631A26983FD8A0136FD /* libPods-BlackHoleAV-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlackHoleAV-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BlackHoleAV/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AAB2B20A7DD582B4062203F3 /* libPods-BlackHoleAV-BlackHoleAVTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlackHoleAV-BlackHoleAVTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA507ABC5F011147A8A6FEBE /* libPods-BlackHoleAV-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlackHoleAV-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1F5D94DBB8354E7412B6B05 /* Pods-BlackHoleAV-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHoleAV-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-BlackHoleAV-tvOSTests/Pods-BlackHoleAV-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		88F5EC8BC95A7BB6267E6A6D /* Pods-BlackHoleAV-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHoleAV-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-BlackHoleAV-tvOSTests/Pods-BlackHoleAV-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		8BBC84A33999C4A041AA84B0 /* Pods-BlackHoleAV-BlackHoleAVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHoleAV-BlackHoleAVTests.debug.xcconfig"; path = "Target Support Files/Pods-BlackHoleAV-BlackHoleAVTests/Pods-BlackHoleAV-BlackHoleAVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		99E9B5E34E49677B755A0026 /* Pods-BlackHoleAV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHoleAV.debug.xcconfig"; path = "Target Support Files/Pods-BlackHoleAV/Pods-BlackHoleAV.debug.xcconfig"; sourceTree = "<group>"; };
+		A9C0051E90E3EA4130D3B4DA /* Pods-BlackHoleAV-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHoleAV-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-BlackHoleAV-tvOSTests/Pods-BlackHoleAV-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA5DE20412F361BEFC326543 /* Pods-BlackHoleAV-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHoleAV-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-BlackHoleAV-tvOS/Pods-BlackHoleAV-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E787A4CDB2EA999CE36006F1 /* libPods-BlackHoleAV-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlackHoleAV-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7D85C6DA410894FF2FA00E6 /* Pods-BlackHoleAV-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHoleAV-tvOS.release.xcconfig"; path = "Target Support Files/Pods-BlackHoleAV-tvOS/Pods-BlackHoleAV-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		EB57029BD0BABACA84636C96 /* libPods-BlackHoleAV-BlackHoleAVTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlackHoleAV-BlackHoleAVTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F4095DC8F133AD35777155F9 /* Pods-BlackHoleAV-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHoleAV-tvOS.release.xcconfig"; path = "Target Support Files/Pods-BlackHoleAV-tvOS/Pods-BlackHoleAV-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		F4842F1E48760FB408ADFB00 /* libPods-BlackHoleAV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlackHoleAV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCB4DEDEFFE8454E951B608F /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E7646FC3D5DA4A338DDF68DA /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		EA65734234F74DFFA9AB152D /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F7DB8B5F19F1434CB1904F6C /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		73FB36DA11B54D95AD9C3C61 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		97C1D856E42744CEB012AD9A /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FF355BE78AA044FFBAC29EBA /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9DA4B60C21BE486C9913F419 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1806158E58264652B980E0CF /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F12B255BCB6741198C6391E7 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		CA1A3A11B2694D989589490F /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B04590B5C116439FB29D518B /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C874E4DE5AA74668A3188494 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		01122B9E8A7E4064B073471A /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C71E28E0EA444573B6B6142C /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4806EAC296894F40B1B069CC /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F3C59D0E3BFCFAD213496D77 /* Pods-BlackHoleAV-BlackHoleAVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHoleAV-BlackHoleAVTests.release.xcconfig"; path = "Target Support Files/Pods-BlackHoleAV-BlackHoleAVTests/Pods-BlackHoleAV-BlackHoleAVTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F14E52D68FCE5694DD00209F /* libPods-BlackHoleAV-BlackHoleAVTests.a in Frameworks */,
+				C69F10A2BC07381E41CAB808 /* libPods-BlackHoleAV-BlackHoleAVTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DC2B2699528BBECAF26CA17 /* libPods-BlackHoleAV.a in Frameworks */,
+				C20D19D3E8A7FA491683EE50 /* libPods-BlackHoleAV.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				606165CFE17BE5AE917717D6 /* libPods-BlackHoleAV-tvOS.a in Frameworks */,
+				86E556A9D22A47C8F0375DF9 /* libPods-BlackHoleAV-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F984537EDB35D14720BCBE7 /* libPods-BlackHoleAV-tvOSTests.a in Frameworks */,
+				EF299884BB6182657137C3D7 /* libPods-BlackHoleAV-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,25 +141,25 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				F4842F1E48760FB408ADFB00 /* libPods-BlackHoleAV.a */,
-				AAB2B20A7DD582B4062203F3 /* libPods-BlackHoleAV-BlackHoleAVTests.a */,
-				BA507ABC5F011147A8A6FEBE /* libPods-BlackHoleAV-tvOS.a */,
-				711B5D2E75224C9140522DB7 /* libPods-BlackHoleAV-tvOSTests.a */,
+				14FB2AC8A68182FC55B0E8D6 /* libPods-BlackHoleAV.a */,
+				EB57029BD0BABACA84636C96 /* libPods-BlackHoleAV-BlackHoleAVTests.a */,
+				E787A4CDB2EA999CE36006F1 /* libPods-BlackHoleAV-tvOS.a */,
+				802F7631A26983FD8A0136FD /* libPods-BlackHoleAV-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		679BEC0ACF4438D04D668683 /* Pods */ = {
+		45F4083507CD9FA159869F24 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				40C03226E8B29B2303EBB895 /* Pods-BlackHoleAV.debug.xcconfig */,
-				3E7F2B3854EA3A3CCAB32366 /* Pods-BlackHoleAV.release.xcconfig */,
-				6630DE30A7DE4B2BE832306A /* Pods-BlackHoleAV-BlackHoleAVTests.debug.xcconfig */,
-				4275B6E201FDCCAFBE8D5917 /* Pods-BlackHoleAV-BlackHoleAVTests.release.xcconfig */,
-				6F53C5EF904FB2DC794B0996 /* Pods-BlackHoleAV-tvOS.debug.xcconfig */,
-				F4095DC8F133AD35777155F9 /* Pods-BlackHoleAV-tvOS.release.xcconfig */,
-				12158BAC826EB43335803701 /* Pods-BlackHoleAV-tvOSTests.debug.xcconfig */,
-				C1F5D94DBB8354E7412B6B05 /* Pods-BlackHoleAV-tvOSTests.release.xcconfig */,
+				99E9B5E34E49677B755A0026 /* Pods-BlackHoleAV.debug.xcconfig */,
+				65AC26FBA0C6419C85265244 /* Pods-BlackHoleAV.release.xcconfig */,
+				8BBC84A33999C4A041AA84B0 /* Pods-BlackHoleAV-BlackHoleAVTests.debug.xcconfig */,
+				F3C59D0E3BFCFAD213496D77 /* Pods-BlackHoleAV-BlackHoleAVTests.release.xcconfig */,
+				DA5DE20412F361BEFC326543 /* Pods-BlackHoleAV-tvOS.debug.xcconfig */,
+				E7D85C6DA410894FF2FA00E6 /* Pods-BlackHoleAV-tvOS.release.xcconfig */,
+				A9C0051E90E3EA4130D3B4DA /* Pods-BlackHoleAV-tvOSTests.debug.xcconfig */,
+				88F5EC8BC95A7BB6267E6A6D /* Pods-BlackHoleAV-tvOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -212,8 +180,7 @@
 				00E356EF1AD99517003FC87E /* BlackHoleAVTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				679BEC0ACF4438D04D668683 /* Pods */,
-				8D554BB234994CB8B64D2C4F /* Resources */,
+				45F4083507CD9FA159869F24 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -231,30 +198,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8D554BB234994CB8B64D2C4F /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				DCB4DEDEFFE8454E951B608F /* AntDesign.ttf */,
-				E7646FC3D5DA4A338DDF68DA /* Entypo.ttf */,
-				EA65734234F74DFFA9AB152D /* EvilIcons.ttf */,
-				F7DB8B5F19F1434CB1904F6C /* Feather.ttf */,
-				73FB36DA11B54D95AD9C3C61 /* FontAwesome.ttf */,
-				97C1D856E42744CEB012AD9A /* FontAwesome5_Brands.ttf */,
-				FF355BE78AA044FFBAC29EBA /* FontAwesome5_Regular.ttf */,
-				9DA4B60C21BE486C9913F419 /* FontAwesome5_Solid.ttf */,
-				1806158E58264652B980E0CF /* Fontisto.ttf */,
-				F12B255BCB6741198C6391E7 /* Foundation.ttf */,
-				CA1A3A11B2694D989589490F /* Ionicons.ttf */,
-				B04590B5C116439FB29D518B /* MaterialCommunityIcons.ttf */,
-				C874E4DE5AA74668A3188494 /* MaterialIcons.ttf */,
-				01122B9E8A7E4064B073471A /* Octicons.ttf */,
-				C71E28E0EA444573B6B6142C /* SimpleLineIcons.ttf */,
-				4806EAC296894F40B1B069CC /* Zocial.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,11 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BlackHoleAVTests" */;
 			buildPhases = (
-				EF1A5A3E37435F1343DCB2AD /* [CP] Check Pods Manifest.lock */,
+				AD61E11A92B99016B4C01385 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				418F4C946CA3C372BB0D22F1 /* [CP] Copy Pods Resources */,
+				BAF22CC0DBE5D8F59C7AA7C8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,13 +225,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BlackHoleAV" */;
 			buildPhases = (
-				A0300D285B8642739862E025 /* [CP] Check Pods Manifest.lock */,
+				2F7F9A4A62AC96745C35350B /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				2E92E204FCE272AED670DAAC /* [CP] Copy Pods Resources */,
+				9154066D620935AC05930330 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,7 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "BlackHoleAV-tvOS" */;
 			buildPhases = (
-				5EB48514A827A8E4623F318F /* [CP] Check Pods Manifest.lock */,
+				B66BD2C8CE16E795444E6365 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -323,7 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "BlackHoleAV-tvOSTests" */;
 			buildPhases = (
-				E491D591A59B458FFDE8A5B5 /* [CP] Check Pods Manifest.lock */,
+				8F95A867F2322EC3581AF05F /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -399,22 +342,6 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				CE0B04A09D154481BB3600C6 /* AntDesign.ttf in Resources */,
-				713F5E8316384AB3825C88A9 /* Entypo.ttf in Resources */,
-				DF46528416E747CBB91A5678 /* EvilIcons.ttf in Resources */,
-				DE6FF765EAE04C30AF3A8DDC /* Feather.ttf in Resources */,
-				6AB0AD5A8D6E43E0A6E9149A /* FontAwesome.ttf in Resources */,
-				CE5284FEC69A4C29846E02C2 /* FontAwesome5_Brands.ttf in Resources */,
-				51B293546EF14074BFEC41AD /* FontAwesome5_Regular.ttf in Resources */,
-				634C10D600A047D5A69B675B /* FontAwesome5_Solid.ttf in Resources */,
-				A01A32CD516D4DDDB42088AC /* Fontisto.ttf in Resources */,
-				5F278DDBC5E646D9A3D8128F /* Foundation.ttf in Resources */,
-				2E3A1FA5030C449291A9E875 /* Ionicons.ttf in Resources */,
-				7D3591F7176847E08A20307B /* MaterialCommunityIcons.ttf in Resources */,
-				38D6583B8B1C4AA4BD851E94 /* MaterialIcons.ttf in Resources */,
-				B061FF4FED4243B295A1814D /* Octicons.ttf in Resources */,
-				D938AC093BE449439BA20E19 /* SimpleLineIcons.ttf in Resources */,
-				8F85BECE772640EE8C21FCAF /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,65 +391,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		2E92E204FCE272AED670DAAC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BlackHoleAV/Pods-BlackHoleAV-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlackHoleAV/Pods-BlackHoleAV-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		418F4C946CA3C372BB0D22F1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BlackHoleAV-BlackHoleAVTests/Pods-BlackHoleAV-BlackHoleAVTests-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlackHoleAV-BlackHoleAVTests/Pods-BlackHoleAV-BlackHoleAVTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5EB48514A827A8E4623F318F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BlackHoleAV-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A0300D285B8642739862E025 /* [CP] Check Pods Manifest.lock */ = {
+		2F7F9A4A62AC96745C35350B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -544,7 +413,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E491D591A59B458FFDE8A5B5 /* [CP] Check Pods Manifest.lock */ = {
+		8F95A867F2322EC3581AF05F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -566,7 +435,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EF1A5A3E37435F1343DCB2AD /* [CP] Check Pods Manifest.lock */ = {
+		9154066D620935AC05930330 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlackHoleAV/Pods-BlackHoleAV-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlackHoleAV/Pods-BlackHoleAV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD61E11A92B99016B4C01385 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -586,6 +473,46 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B66BD2C8CE16E795444E6365 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlackHoleAV-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAF22CC0DBE5D8F59C7AA7C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlackHoleAV-BlackHoleAVTests/Pods-BlackHoleAV-BlackHoleAVTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlackHoleAV-BlackHoleAVTests/Pods-BlackHoleAV-BlackHoleAVTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -681,7 +608,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6630DE30A7DE4B2BE832306A /* Pods-BlackHoleAV-BlackHoleAVTests.debug.xcconfig */;
+			baseConfigurationReference = 8BBC84A33999C4A041AA84B0 /* Pods-BlackHoleAV-BlackHoleAVTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -704,7 +631,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4275B6E201FDCCAFBE8D5917 /* Pods-BlackHoleAV-BlackHoleAVTests.release.xcconfig */;
+			baseConfigurationReference = F3C59D0E3BFCFAD213496D77 /* Pods-BlackHoleAV-BlackHoleAVTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -724,7 +651,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40C03226E8B29B2303EBB895 /* Pods-BlackHoleAV.debug.xcconfig */;
+			baseConfigurationReference = 99E9B5E34E49677B755A0026 /* Pods-BlackHoleAV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -747,7 +674,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E7F2B3854EA3A3CCAB32366 /* Pods-BlackHoleAV.release.xcconfig */;
+			baseConfigurationReference = 65AC26FBA0C6419C85265244 /* Pods-BlackHoleAV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -768,7 +695,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F53C5EF904FB2DC794B0996 /* Pods-BlackHoleAV-tvOS.debug.xcconfig */;
+			baseConfigurationReference = DA5DE20412F361BEFC326543 /* Pods-BlackHoleAV-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -796,7 +723,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4095DC8F133AD35777155F9 /* Pods-BlackHoleAV-tvOS.release.xcconfig */;
+			baseConfigurationReference = E7D85C6DA410894FF2FA00E6 /* Pods-BlackHoleAV-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -824,7 +751,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12158BAC826EB43335803701 /* Pods-BlackHoleAV-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = A9C0051E90E3EA4130D3B4DA /* Pods-BlackHoleAV-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -851,7 +778,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1F5D94DBB8354E7412B6B05 /* Pods-BlackHoleAV-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 88F5EC8BC95A7BB6267E6A6D /* Pods-BlackHoleAV-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
