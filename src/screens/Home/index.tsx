@@ -1,7 +1,8 @@
 import React from 'react';
-import { Text, SafeAreaView } from 'react-native';
+import { Text, SafeAreaView, NativeModules, TouchableOpacity} from 'react-native';
 import { NavigationScreenProp, NavigationState } from 'react-navigation';
 
+const { ProcessModule } = NativeModules;
 interface HomeProps {
   navigation: NavigationScreenProp<NavigationState>;
 }
@@ -9,8 +10,10 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = (props: HomeProps) => {
 
   return (
-    <SafeAreaView style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}> 
+    <SafeAreaView style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <TouchableOpacity onPress={() => ProcessModule.sayFuck()}>
         <Text>BlackHoleAV</Text>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 };
