@@ -30,8 +30,8 @@ public class ProcessModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void sayFuck() {
-        Log.d("Fuck","Here");
+    public void testModule() {
+        Log.d("Debug","Here");
         Intent service = new Intent(this.reactContext, BackgroundTaskService.class);
         Bundle bundle = new Bundle();
 
