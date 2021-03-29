@@ -1,8 +1,8 @@
-import { NativeModules } from 'react-native';
+import {NativeModules} from 'react-native';
 
-const { ProcessModule } = NativeModules;
+const {ProcessModule} = NativeModules;
 
 module.exports = async (taskData: any) => {
-    // do stuff
-    console.log({taskData})
+  // do stuff
+  console.log({taskData});
 };
