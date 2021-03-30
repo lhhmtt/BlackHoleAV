@@ -9,20 +9,44 @@ import com.blackholeav.RestarterBroadcastReceiver;
 import com.facebook.react.HeadlessJsTaskService;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.jstasks.HeadlessJsTaskConfig;
-
+import android.os.Environment;
 import javax.annotation.Nullable;
+import java.io.File;
 
 public class BackgroundTaskService extends HeadlessJsTaskService {
     private Handler handler;
 
-    public static final long DEFAULT_SYNC_INTERVAL = 10 * 1000;
+    public static final long DEFAULT_SYNC_INTERVAL = 3 * 1000;
+
+    public static File getLastModified(String directoryFilePath)
+    {
+        File directory = new File(directoryFilePath);
+        File[] files = directory.listFiles(File::isFile);
+        long lastModifiedTime = Long.MIN_VALUE;
+        File chosenFile = null;
+
+        if (files != null)
+        {
+            for (File file : files)
+            {
+                if (file.lastModified() > lastModifiedTime)
+                {
+                    chosenFile = file;
+                    lastModifiedTime = file.lastModified();
+                }
+            }
+        }
+
+        return chosenFile;
+    }
 
     private Runnable runnableService = new Runnable() {
         @Override
         public void run() {
+            String filepath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath();
+            System.out.println(getLastModified(filepath).getName());
             //create AsyncTask here
-            Log.d("TODO", "polling each 10 seconds");
-
+            Log.d("TODO", "polling each 3 seconds");
             handler.postDelayed(runnableService, DEFAULT_SYNC_INTERVAL);
         }
     };
