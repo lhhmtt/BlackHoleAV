@@ -6,6 +6,7 @@ import com.facebook.react.shell.MainReactPackage;
 import com.blackholeav.packages.ProcessPackage;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import com.rnfs.RNFSPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
@@ -30,6 +31,7 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
           return Arrays.<ReactPackage>asList(
             new MainReactPackage(),
+            new RNFSPackage(),
             new VectorIconsPackage(),
             new SafeAreaContextPackage(),
             new RNGestureHandlerPackage(),

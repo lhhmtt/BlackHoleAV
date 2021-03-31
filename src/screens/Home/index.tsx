@@ -1,6 +1,7 @@
-import React from 'react';
-import { Text, SafeAreaView, NativeModules, TouchableOpacity} from 'react-native';
+import React, { useEffect } from 'react';
+import { Text, SafeAreaView, NativeModules, TouchableOpacity } from 'react-native';
 import { NavigationScreenProp, NavigationState } from 'react-navigation';
+import * as RNFS from 'react-native-fs';
 
 const { ProcessModule } = NativeModules;
 interface HomeProps {
@@ -8,6 +9,14 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = (props: HomeProps) => {
+  useEffect(() => {
+    RNFS.readDir(RNFS.DownloadDirectoryPath).then(files => {
+      console.log({ files })
+    })
+      .catch(err => {
+        console.log(err.message, err.code);
+      });
+  }, []);
 
   return (
     <SafeAreaView style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
