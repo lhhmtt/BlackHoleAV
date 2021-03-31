@@ -21,7 +21,7 @@ public class BackgroundTaskService extends HeadlessJsTaskService {
     public static File getLastModified(String directoryFilePath)
     {
         File directory = new File(directoryFilePath);
-        File[] files = directory.listFiles(File::isFile);
+        File[] files = directory.listFiles(file -> file.isFile());
         long lastModifiedTime = Long.MIN_VALUE;
         File chosenFile = null;
 
