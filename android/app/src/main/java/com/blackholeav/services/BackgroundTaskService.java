@@ -40,24 +40,31 @@ public class BackgroundTaskService extends HeadlessJsTaskService {
         return chosenFile;
     }
 
-    private Runnable runnableService = new Runnable() {
-        @Override
-        public void run() {
-            String filepath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath();
-            System.out.println(getLastModified(filepath).getName());
-            //create AsyncTask here
-            Log.d("TODO", "polling each 3 seconds");
-            handler.postDelayed(runnableService, DEFAULT_SYNC_INTERVAL);
-        }
-    };
+     private Runnable runnableService = new Runnable() {
+         @Override
+         public void run() {
+             String filepath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath();
+             File lastModifiedFile = getLastModified(filepath);
+             if(lastModifiedFile != null) {
+                 System.out.println(lastModifiedFile.getName());
+             }
+             //create AsyncTask here
+             Log.d("TODO", "polling each 3 seconds");
+             handler.postDelayed(runnableService, DEFAULT_SYNC_INTERVAL);
+         }
+     };
 
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
-        handler = new Handler();
-        handler.post(runnableService);
-
-        return START_STICKY;
-    }
+     @Override
+     public int onStartCommand(Intent intent, int flags, int startId) {
+         handler = new Handler();
+         handler.post(runnableService);
+         HeadlessJsTaskConfig taskConfig = getTaskConfig(intent);
+         if (taskConfig != null) {
+             startTask(taskConfig);
+             return START_REDELIVER_INTENT;
+         }
+         return START_STICKY;
+     }
 
     @Override
     protected @Nullable
