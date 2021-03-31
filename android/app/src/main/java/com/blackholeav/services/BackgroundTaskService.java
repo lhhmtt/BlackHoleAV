@@ -9,31 +9,62 @@ import com.blackholeav.RestarterBroadcastReceiver;
 import com.facebook.react.HeadlessJsTaskService;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.jstasks.HeadlessJsTaskConfig;
-
+import android.os.Environment;
 import javax.annotation.Nullable;
+import java.io.File;
 
 public class BackgroundTaskService extends HeadlessJsTaskService {
     private Handler handler;
 
-    public static final long DEFAULT_SYNC_INTERVAL = 10 * 1000;
+    public static final long DEFAULT_SYNC_INTERVAL = 3 * 1000;
 
-    private Runnable runnableService = new Runnable() {
-        @Override
-        public void run() {
-            //create AsyncTask here
-            Log.d("TODO", "polling each 10 seconds");
+    public static File getLastModified(String directoryFilePath)
+    {
+        File directory = new File(directoryFilePath);
+        File[] files = directory.listFiles(file -> file.isFile());
+        long lastModifiedTime = Long.MIN_VALUE;
+        File chosenFile = null;
 
-            handler.postDelayed(runnableService, DEFAULT_SYNC_INTERVAL);
+        if (files != null)
+        {
+            for (File file : files)
+            {
+                if (file.lastModified() > lastModifiedTime)
+                {
+                    chosenFile = file;
+                    lastModifiedTime = file.lastModified();
+                }
+            }
         }
-    };
 
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
-        handler = new Handler();
-        handler.post(runnableService);
-
-        return START_STICKY;
+        return chosenFile;
     }
+
+     private Runnable runnableService = new Runnable() {
+         @Override
+         public void run() {
+             String filepath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath();
+             File lastModifiedFile = getLastModified(filepath);
+             if(lastModifiedFile != null) {
+                 System.out.println(lastModifiedFile.getName());
+             }
+             //create AsyncTask here
+             Log.d("TODO", "polling each 3 seconds");
+             handler.postDelayed(runnableService, DEFAULT_SYNC_INTERVAL);
+         }
+     };
+
+     @Override
+     public int onStartCommand(Intent intent, int flags, int startId) {
+         handler = new Handler();
+         handler.post(runnableService);
+         HeadlessJsTaskConfig taskConfig = getTaskConfig(intent);
+         if (taskConfig != null) {
+             startTask(taskConfig);
+             return START_REDELIVER_INTENT;
+         }
+         return START_STICKY;
+     }
 
     @Override
     protected @Nullable
