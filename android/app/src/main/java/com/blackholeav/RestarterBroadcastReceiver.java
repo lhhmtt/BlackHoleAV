@@ -11,6 +11,6 @@ public class RestarterBroadcastReceiver extends BroadcastReceiver {
  @Override
     public void onReceive(Context context, Intent intent) {
         Log.i(RestarterBroadcastReceiver.class.getSimpleName(), "restart service!!");
-        context.startService(new Intent(context, BackgroundTaskService.class));;
+        context.startService(new Intent(context, BackgroundTaskService.class));
     }
 }
