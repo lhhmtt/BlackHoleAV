@@ -7,8 +7,13 @@ import android.util.Log;
 
 import com.blackholeav.RestarterBroadcastReceiver;
 import com.facebook.react.HeadlessJsTaskService;
+import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.ReactContext;
+import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.jstasks.HeadlessJsTaskConfig;
+import com.facebook.react.modules.core.DeviceEventManagerModule;
+
 import android.os.Environment;
 import javax.annotation.Nullable;
 import java.io.File;
@@ -18,7 +23,7 @@ public class BackgroundTaskService extends HeadlessJsTaskService {
 
     public static final long DEFAULT_SYNC_INTERVAL = 3 * 1000;
 
-    public static File getLastModified(String directoryFilePath)
+    public File getLastModified(String directoryFilePath)
     {
         File directory = new File(directoryFilePath);
         File[] files = directory.listFiles(file -> file.isFile());
@@ -47,6 +52,14 @@ public class BackgroundTaskService extends HeadlessJsTaskService {
              File lastModifiedFile = getLastModified(filepath);
              if(lastModifiedFile != null) {
                  System.out.println(lastModifiedFile.getName());
+                 WritableMap payload = Arguments.createMap();
+                payload.putString("latestFileName", lastModifiedFile.getName());
+                final ReactInstanceManager reactInstanceManager =
+                        getReactNativeHost().getReactInstanceManager();
+                ReactContext reactContext = reactInstanceManager.getCurrentReactContext();
+                reactContext
+                .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
+                .emit("onCheckingFile", payload);
              }
              //create AsyncTask here
              Log.d("TODO", "polling each 3 seconds");
