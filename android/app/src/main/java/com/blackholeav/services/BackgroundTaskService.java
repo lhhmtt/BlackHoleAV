@@ -22,6 +22,7 @@ public class BackgroundTaskService extends HeadlessJsTaskService {
     private Handler handler;
 
     public static final long DEFAULT_SYNC_INTERVAL = 3 * 1000;
+    public String fileName = "";
 
     public File getLastModified(String directoryFilePath)
     {
@@ -34,7 +35,7 @@ public class BackgroundTaskService extends HeadlessJsTaskService {
         {
             for (File file : files)
             {
-                if (file.lastModified() > lastModifiedTime)
+                if (file.lastModified() > lastModifiedTime && !file.getName().contains(".pending"))
                 {
                     chosenFile = file;
                     lastModifiedTime = file.lastModified();
@@ -51,17 +52,23 @@ public class BackgroundTaskService extends HeadlessJsTaskService {
              String filepath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath();
              File lastModifiedFile = getLastModified(filepath);
              if(lastModifiedFile != null) {
-                 System.out.println(lastModifiedFile.getName());
-                 WritableMap payload = Arguments.createMap();
-                payload.putString("latestFileName", lastModifiedFile.getName());
-                final ReactInstanceManager reactInstanceManager =
-                        getReactNativeHost().getReactInstanceManager();
-                ReactContext reactContext = reactInstanceManager.getCurrentReactContext();
-                reactContext
-                .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
-                .emit("onCheckingFile", payload);
+                 if(!fileName.equals(lastModifiedFile.getName()) || fileName.isEmpty()) {
+                     System.out.println("NEW FILE");
+                     fileName = lastModifiedFile.getName();
+                     String payload = fileName;
+                     final ReactInstanceManager reactInstanceManager =
+                             getReactNativeHost().getReactInstanceManager();
+                     ReactContext reactContext = reactInstanceManager.getCurrentReactContext();
+                     reactContext
+                             .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
+                             .emit("onCheckingFile", payload);
+                     
+                 } else {
+                     System.out.println("OLD FILE");
+                 }
+
+
              }
-             //create AsyncTask here
              Log.d("TODO", "polling each 3 seconds");
              handler.postDelayed(runnableService, DEFAULT_SYNC_INTERVAL);
          }
