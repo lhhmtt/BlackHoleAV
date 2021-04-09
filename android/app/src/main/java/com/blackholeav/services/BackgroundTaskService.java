@@ -20,8 +20,7 @@ import java.io.File;
 
 public class BackgroundTaskService extends HeadlessJsTaskService {
     private Handler handler;
-
-    public static final long DEFAULT_SYNC_INTERVAL = 3 * 1000;
+    public static final long DEFAULT_SYNC_INTERVAL = 5 * 1000;
     public String fileName = "";
 
     public File getLastModified(String directoryFilePath)
@@ -35,7 +34,7 @@ public class BackgroundTaskService extends HeadlessJsTaskService {
         {
             for (File file : files)
             {
-                if (file.lastModified() > lastModifiedTime && !file.getName().contains(".pending"))
+                if (file.lastModified() > lastModifiedTime && !file.getName().contains(".pending") && !file.getName().contains(".com."))
                 {
                     chosenFile = file;
                     lastModifiedTime = file.lastModified();
@@ -46,45 +45,44 @@ public class BackgroundTaskService extends HeadlessJsTaskService {
         return chosenFile;
     }
 
-     private Runnable runnableService = new Runnable() {
-         @Override
-         public void run() {
-             String filepath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath();
-             File lastModifiedFile = getLastModified(filepath);
-             if(lastModifiedFile != null) {
-                 if(!fileName.equals(lastModifiedFile.getName()) || fileName.isEmpty()) {
-                     System.out.println("NEW FILE");
-                     fileName = lastModifiedFile.getName();
-                     String payload = fileName;
-                     final ReactInstanceManager reactInstanceManager =
-                             getReactNativeHost().getReactInstanceManager();
-                     ReactContext reactContext = reactInstanceManager.getCurrentReactContext();
-                     reactContext
-                             .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
-                             .emit("onCheckingFile", payload);
+    private Runnable runnableService = new Runnable() {
+        @Override
+        public void run() {
+                String filepath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath();
+                File lastModifiedFile = getLastModified(filepath);
+                if(lastModifiedFile != null) {
+                    if(!fileName.equals(lastModifiedFile.getName()) || fileName.isEmpty()) {
+                        System.out.println("NEW FILE");
+                        fileName = lastModifiedFile.getName();
+                        String payload = fileName;
+                        final ReactInstanceManager reactInstanceManager =
+                                getReactNativeHost().getReactInstanceManager();
+                        ReactContext reactContext = reactInstanceManager.getCurrentReactContext();
+                        reactContext
+                                .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
+                                .emit("onCheckingFile", payload);
                      
-                 } else {
-                     System.out.println("OLD FILE");
-                 }
+                    } else {
+                        System.out.println("OLD FILE");
+                    }
+                }
+                Log.d("TODO", "polling each 5 seconds");
+                handler.postDelayed(runnableService, DEFAULT_SYNC_INTERVAL);
+        }
 
+    };
 
-             }
-             Log.d("TODO", "polling each 3 seconds");
-             handler.postDelayed(runnableService, DEFAULT_SYNC_INTERVAL);
-         }
-     };
-
-     @Override
-     public int onStartCommand(Intent intent, int flags, int startId) {
-         handler = new Handler();
-         handler.post(runnableService);
-         HeadlessJsTaskConfig taskConfig = getTaskConfig(intent);
-         if (taskConfig != null) {
-             startTask(taskConfig);
-             return START_REDELIVER_INTENT;
-         }
-         return START_STICKY;
-     }
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        handler = new Handler();
+        handler.post(runnableService);
+        HeadlessJsTaskConfig taskConfig = getTaskConfig(intent);
+        if (taskConfig != null) {
+            startTask(taskConfig);
+            return START_REDELIVER_INTENT;
+        }
+        return START_STICKY;
+    }
 
     @Override
     protected @Nullable
