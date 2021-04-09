@@ -18,6 +18,7 @@ import com.blackholeav.services.BackgroundTaskService;
 
 public class ProcessModule extends ReactContextBaseJavaModule {
     private static ReactApplicationContext reactContext;
+    private int count = 0;
     
     public ProcessModule(ReactApplicationContext context) {
         super(context);
@@ -30,16 +31,18 @@ public class ProcessModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void testModule() {
-        Log.d("Debug","Here");
-        Intent service = new Intent(this.reactContext, BackgroundTaskService.class);
-        Bundle bundle = new Bundle();
+    public void startProcess() {
+        if(count == 0) {
+            Log.d("Debug","Here");
+            Intent service = new Intent(this.reactContext, BackgroundTaskService.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("foo", "bar");
+            service.putExtras(bundle);
 
-        bundle.putString("foo", "bar");
-        service.putExtras(bundle);
-
-        this.reactContext.startService(service);
-        HeadlessJsTaskService.acquireWakeLockNow(this.reactContext);
+            this.reactContext.startService(service);
+            HeadlessJsTaskService.acquireWakeLockNow(this.reactContext);
+        }
+        count = 1;
         
     }
 }
