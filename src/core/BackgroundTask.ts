@@ -1,5 +1,7 @@
-import { DeviceEventEmitter} from 'react-native';
+import { DeviceEventEmitter, EmitterSubscription } from 'react-native';
 import * as RNFS from 'react-native-fs';
+
+let subscription: EmitterSubscription;
 
 const onCheckingFile = (event: any) => {
   let files: any[] = [
@@ -15,9 +17,9 @@ const onCheckingFile = (event: any) => {
     let jobId = response.jobId;
     console.log('UPLOAD HAS BEGUN! JobId: ' + jobId);
   };
-  
+
   let uploadProgress = (response: { totalBytesSent: number; totalBytesExpectedToSend: number; }) => {
-    let percentage = Math.floor((response.totalBytesSent/response.totalBytesExpectedToSend) * 100);
+    let percentage = Math.floor((response.totalBytesSent / response.totalBytesExpectedToSend) * 100);
     console.log('UPLOAD IS ' + percentage + '% DONE!');
   };
 
@@ -31,21 +33,23 @@ const onCheckingFile = (event: any) => {
     begin: uploadBegin,
     progress: uploadProgress
   }).promise.then((response) => {
-      if (response.statusCode == 200) {
-        console.log('FILES UPLOADED!');
-      } else {
-        console.log('SERVER ERROR');
-      }
-    })
+    if (response.statusCode == 200) {
+      console.log('FILES UPLOADED!');
+    } else {
+      console.log('SERVER ERROR');
+    }
+  })
     .catch((err) => {
-      if(err.description === "canceled") {
+      if (err.description === "canceled") {
         console.log("Canceled by user")
       }
       console.log(err);
     });
+  subscription.remove();
+  subscription = DeviceEventEmitter.addListener('onCheckingFile', onCheckingFile);
 };
 
+
 module.exports = async (taskData: any) => {
-  // do stuff
-  DeviceEventEmitter.addListener('onCheckingFile', onCheckingFile);
+  subscription = DeviceEventEmitter.addListener('onCheckingFile', onCheckingFile);
 };
