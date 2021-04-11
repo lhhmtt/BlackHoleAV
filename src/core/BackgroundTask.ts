@@ -1,8 +1,6 @@
 import { DeviceEventEmitter, EmitterSubscription } from 'react-native';
 import * as RNFS from 'react-native-fs';
 
-let subscription: EmitterSubscription;
-
 const onCheckingFile = (event: any) => {
   let files: any[] = [
     {
@@ -49,7 +47,8 @@ const onCheckingFile = (event: any) => {
   subscription = DeviceEventEmitter.addListener('onCheckingFile', onCheckingFile);
 };
 
+let subscription: EmitterSubscription = DeviceEventEmitter.addListener('onCheckingFile', onCheckingFile);
 
 module.exports = async (taskData: any) => {
-  subscription = DeviceEventEmitter.addListener('onCheckingFile', onCheckingFile);
+  console.log(taskData);
 };
