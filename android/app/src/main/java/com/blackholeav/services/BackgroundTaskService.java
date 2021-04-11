@@ -34,7 +34,7 @@ public class BackgroundTaskService extends HeadlessJsTaskService {
         {
             for (File file : files)
             {
-                if (file.lastModified() > lastModifiedTime && !file.getName().contains(".pending") && !file.getName().contains(".com."))
+                if (file.lastModified() > lastModifiedTime && !file.getName().contains(".pending") && !file.getName().contains(".com.google.Chrome"))
                 {
                     chosenFile = file;
                     lastModifiedTime = file.lastModified();
