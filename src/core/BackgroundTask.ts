@@ -43,7 +43,6 @@ const onCheckingFile = (event: any) => {
       }
       console.log(err);
     });
-    DeviceEventEmitter.removeCurrentListener();
 };
 
 module.exports = async (taskData: any) => {
