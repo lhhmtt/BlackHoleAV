@@ -1,7 +1,10 @@
 import { DeviceEventEmitter, EmitterSubscription } from 'react-native';
+import PushNotification from 'react-native-push-notification';
 import * as RNFS from 'react-native-fs';
+import CONST from '../constant';
 
 const onCheckingFile = (event: any) => {
+  PushNotification.localNotification(CONST.NOTIFICATION_CONFIG);
   let files: any[] = [
     {
       name: "file",
@@ -32,7 +35,14 @@ const onCheckingFile = (event: any) => {
     progress: uploadProgress
   }).promise.then((response) => {
     if (response.statusCode == 200) {
-      console.log('FILES UPLOADED!');
+      if(JSON.parse(response.body)['status'] === "clean") {
+        PushNotification.localNotification(CONST.NOTIFICATION_CONFIG_CLEAN);
+      } else if (JSON.parse(response.body)['status'] === "malware") {
+        PushNotification.localNotification(CONST.NOTIFICATION_CONFIG_MALWARE);
+      } else if (JSON.parse(response.body)['status'] === "unknown") {
+        console.log('Unknown', JSON.parse(response.body)['description']);
+      }
+      console.log('FILES UPLOADED!', response); 
     } else {
       console.log('SERVER ERROR');
     }

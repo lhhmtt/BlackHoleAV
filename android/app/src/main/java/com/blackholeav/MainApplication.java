@@ -6,6 +6,7 @@ import com.facebook.react.shell.MainReactPackage;
 import com.blackholeav.packages.ProcessPackage;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 import com.rnfs.RNFSPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
@@ -31,6 +32,7 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
           return Arrays.<ReactPackage>asList(
             new MainReactPackage(),
+            new ReactNativePushNotificationPackage(),
             new RNFSPackage(),
             new VectorIconsPackage(),
             new SafeAreaContextPackage(),
