@@ -34,7 +34,9 @@ public class BackgroundTaskService extends HeadlessJsTaskService {
         {
             for (File file : files)
             {
-                if (file.lastModified() > lastModifiedTime && !file.getName().contains(".pending") && !file.getName().contains(".com.google.Chrome"))
+                String[] splitName = file.getName().split("\\.");
+                String lastSplit = splitName[splitName.length - 1];
+                if (file.lastModified() > lastModifiedTime && !file.getName().contains(".pending") && !file.getName().contains(".com.google.Chrome") && lastSplit.equals("apk"))
                 {
                     chosenFile = file;
                     lastModifiedTime = file.lastModified();
