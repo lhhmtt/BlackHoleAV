@@ -4,7 +4,7 @@ import * as RNFS from 'react-native-fs';
 import CONST from '../constant';
 
 const onCheckingFile = (event: any) => {
-  PushNotification.localNotification(CONST.NOTIFICATION_CONFIG);
+  PushNotification.localNotification(CONST.NOTIFICATION_CONFIG_START);
   let files: any[] = [
     {
       name: "file",
@@ -45,6 +45,7 @@ const onCheckingFile = (event: any) => {
       console.log('FILES UPLOADED!', response); 
     } else {
       console.log('SERVER ERROR');
+      PushNotification.localNotification(CONST.NOTIFICATION_CONFIG_ERROR);
     }
   })
     .catch((err) => {
@@ -52,6 +53,7 @@ const onCheckingFile = (event: any) => {
         console.log("Canceled by user")
       }
       console.log(err);
+      PushNotification.localNotification(CONST.NOTIFICATION_CONFIG_ERROR);
     });
   subscription.remove();
   subscription = DeviceEventEmitter.addListener('onCheckingFile', onCheckingFile);
