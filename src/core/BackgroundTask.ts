@@ -8,8 +8,8 @@ const onCheckingFile = (event: any) => {
   let files: any[] = [
     {
       name: "file",
-      filename: event,
-      filepath: RNFS.DownloadDirectoryPath + `/${event}`,
+      filename: event['name'],
+      filepath: event['path'],
       filetype: 'apk'
     }
   ]
