@@ -31,6 +31,15 @@ public class ProcessModule extends ReactContextBaseJavaModule {
         return "ProcessModule";
     }
 
+    @ReactMethod(isBlockingSynchronousMethod = true)
+    public boolean checkStatus() {
+        if(service == null && bundle == null) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     @ReactMethod
     public void startProcess() {
         if(service == null && bundle == null) {
