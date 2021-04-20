@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, SafeAreaView } from 'react-native';
+import { Text, SafeAreaView, Image } from 'react-native';
 import { NavigationScreenProp, NavigationState } from 'react-navigation';
 
 interface AboutProps {
@@ -9,8 +9,12 @@ interface AboutProps {
 const About: React.FC<AboutProps> = (props: AboutProps) => {
 
   return (
-    <SafeAreaView style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}> 
-        <Text>About Project</Text>
+    <SafeAreaView style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Image
+        source={{ uri: "https://reactnative.dev/docs/assets/p_cat1.png" }}
+        style={{ width: 200, height: 200 }}
+      />
+      <Text style={{fontSize: 20, textAlign: 'center', padding: 5}}>The application is developed based on analysis of apk behavior through algorithms for detecting malicious apk</Text>
     </SafeAreaView>
   );
 };
