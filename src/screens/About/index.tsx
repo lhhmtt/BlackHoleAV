@@ -9,12 +9,12 @@ interface AboutProps {
 const About: React.FC<AboutProps> = (props: AboutProps) => {
 
   return (
-    <SafeAreaView style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <SafeAreaView style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: "white" }}>
       <Image
         source={{ uri: "https://reactnative.dev/docs/assets/p_cat1.png" }}
         style={{ width: 200, height: 200 }}
       />
-      <Text style={{fontSize: 20, textAlign: 'center', padding: 5}}>The application is developed based on analysis of apk behavior through algorithms for detecting malicious apk</Text>
+      <Text style={{fontSize: 20, textAlign: 'center', padding: 5, color:"#696969"}}>The application is developed based on analysis of apk behavior through algorithms for detecting malicious apk</Text>
     </SafeAreaView>
   );
 };
