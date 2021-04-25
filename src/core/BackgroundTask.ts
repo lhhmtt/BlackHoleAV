@@ -25,7 +25,7 @@ const onCheckingFile = (event: any) => {
   };
 
   RNFS.uploadFiles({
-    toUrl: encodeURI('http://10.0.2.2:5000/upload'),
+    toUrl: encodeURI('http://45.32.110.244:5000/upload'),
     files: files,
     method: 'POST',
     headers: {
@@ -33,7 +33,7 @@ const onCheckingFile = (event: any) => {
     },
     begin: uploadBegin,
     progress: uploadProgress
-  }).promise.then((response) => {
+  }).promise.then((response: { statusCode: number; body: string; }) => {
     if (response.statusCode == 200) {
       if(JSON.parse(response.body)['status'] === "clean") {
         PushNotification.localNotification(CONST.NOTIFICATION_CONFIG_CLEAN);
@@ -48,7 +48,7 @@ const onCheckingFile = (event: any) => {
       PushNotification.localNotification(CONST.NOTIFICATION_CONFIG_ERROR);
     }
   })
-    .catch((err) => {
+    .catch((err: { description: string; }) => {
       if (err.description === "canceled") {
         console.log("Canceled by user")
       }
